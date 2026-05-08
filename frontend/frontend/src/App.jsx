@@ -56,7 +56,7 @@ function App() {
     try {
 
       const res = await axios.get(
-        "http://localhost:5000/videos"
+        "https://neki-practice-1.onrender.com//videos"
       );
 
       setReels(res.data);
@@ -93,7 +93,7 @@ function App() {
       formData.append("video", video);
 
       await axios.post(
-        "http://localhost:5000/upload",
+        "https://neki-practice-1.onrender.com//upload",
         formData
       );
 
